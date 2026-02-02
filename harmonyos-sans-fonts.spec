@@ -3,9 +3,9 @@
 
 Name:           %{fontname}-fonts
 Version:        0
-Release:        1%?dist
+Release:        1%{?dist}
 Summary:        HarmonyOS Sans fonts
-License:        HarmonyOS Sans License
+License:        LicenseRef-HarmonyOS-Sans
 URL:            https://developer.huawei.com/consumer/en/design/resource/
 Source0:        https://developer.huawei.com/Enexport/sites/default/images/download/next/HarmonyOS-Sans.rar
 
@@ -33,7 +33,6 @@ find . -name "*.ttf" -exec install -m 0644 {} %{buildroot}%{_fontdir} \;
 %files
 %dir %{_fontdir}
 %{_fontdir}/*.ttf
-%license HarmonyOS-Sans/LICENSE* || echo "No license file found"
 
 %changelog
 * Mon Feb 02 2026 Nagy András <aisen@ik.me> - 0-1
