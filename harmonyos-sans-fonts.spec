@@ -5,7 +5,7 @@ Name:           %{fontname}-fonts
 Version:        0
 Release:        1%{?dist}
 Summary:        HarmonyOS Sans fonts
-License:        LicenseRef-HarmonyOS-Sans
+License:        GPL-3.0-only
 URL:            https://developer.huawei.com/consumer/en/design/resource/
 Source0:        https://developer.huawei.com/Enexport/sites/default/images/download/next/HarmonyOS-Sans.rar
 
