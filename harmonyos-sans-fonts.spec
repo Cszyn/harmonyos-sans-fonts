@@ -1,6 +1,6 @@
 Name:           harmonyos-sans-fonts
-Version:        25.12.18
-Release:        2%{?dist}
+
+Release:        2%?dist
 Summary:        HarmonyOS Sans fonts
 License:        LicenseRef-Proprietary
 URL:            https://developer.huawei.com/consumer/cn/design/resource/
@@ -10,7 +10,7 @@ BuildArch:      noarch
 BuildRequires:  fontpackages-devel
 BuildRequires:  bsdtar
 Requires:       fontpackages-filesystem
-Packager:       Nagy András <aisen@ik.me>
+Packager:       N. András <aisen@ik.me>
 
 %description
 HarmonyOS-Sans developed by Huawei predominantly used on HarmonyOS and OpenHarmony
@@ -33,8 +33,8 @@ find . -name "*.ttf" -exec install -m 0644 {} %{buildroot}%{_fontdir} \;
 %{_fontdir}/*.ttf
 
 %changelog
-* Mon Feb 03 2026 Nagy András <aisen@ik.me> - 25.12.18-2
-- Use LICENSE from upstream archive
+* Mon Feb 03 2026 N. András <aisen@ik.me> - 25.12.18-2
+- Switched source to chinese developer portal release
 
-* Mon Feb 03 2026 Nagy András <aisen@ik.me> - 25.12.18-1
-- Initial package
+* Mon Feb 02 2026 N. András <aisen@ik.me> - 24.06.19-1
+- Initial package based on international developer portal release
