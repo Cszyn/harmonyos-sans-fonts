@@ -1,5 +1,5 @@
 Name:           harmonyos-sans-fonts
-
+Version:        25.09.23
 Release:        2%?dist
 Summary:        HarmonyOS Sans fonts
 License:        LicenseRef-Proprietary
@@ -24,16 +24,15 @@ bsdtar -xf %{SOURCE0}
 %build
 
 %install
-install -m 0755 -d %{buildroot}%{_fontdir}
-find . -name "*.ttf" -exec install -m 0644 {} %{buildroot}%{_fontdir} \;
+install -m 0755 -d %{buildroot}%{_datadir}/fonts/harmonyos-sans
+find . -name "*.ttf" -exec install -m 0644 {} %{buildroot}%{_datadir}/fonts/harmonyos-sans/ \;
 
 %files
 %license LICENSE
-%dir %{_fontdir}
-%{_fontdir}/*.ttf
+%{_datadir}/fonts/harmonyos-sans/
 
 %changelog
-* Mon Feb 03 2026 N. András <aisen@ik.me> - 25.12.18-2
+* Tue Feb 03 2026 N. András <aisen@ik.me> - 25.09.23-1
 - Switched source to chinese developer portal release
 
 * Mon Feb 02 2026 N. András <aisen@ik.me> - 24.06.19-1
