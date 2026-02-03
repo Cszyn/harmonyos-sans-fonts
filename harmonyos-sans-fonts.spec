@@ -37,7 +37,4 @@ find . -name "*.ttf" -exec install -m 0644 {} %{buildroot}%{_fontdir} \;
 - Use LICENSE from upstream archive
 
 * Mon Feb 03 2026 Nagy András <aisen@ik.me> - 25.12.18-1
-- Update source to 2025.12.18 release from the chinese developer portal
-
-* Mon Feb 02 2026 Nagy András <aisen@ik.me> - 24.06.19-1
-- Initial package based on international developer portal release
+- Initial package
