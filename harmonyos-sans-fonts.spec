@@ -18,7 +18,7 @@ devices, designed for a consistent multilingual typography in over a 100
 languages.
 
 %prep
-%setup -c -T
+%autosetup -c -T
 bsdtar -xf %{SOURCE0}
 
 %build
